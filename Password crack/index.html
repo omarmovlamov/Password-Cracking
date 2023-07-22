@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="nav">
+          <img src="img/logo-ig-png-32464.png" alt="insta logo" />
+        </div>
+
+        <div class="numbers">
+            <input type="text" id="result" readonly>
+          <div class="firstnumbers ">
+            <button class="button-73" onclick="setInputValue(1)">1</button>
+            <button class="button-73" onclick="setInputValue(2)">2</button>
+            <button class="button-73" onclick="setInputValue(3)">3</button>
+          </div>
+          <div class="secondnumbers ">
+            <button class="button-73" onclick="setInputValue(4)">4</button>
+            <button class="button-73" onclick="setInputValue(5)">5</button>
+            <button class="button-73" onclick="setInputValue(6)">6</button>
+          </div>
+          <div class="thirdnumbers ">
+            <button class="button-73" onclick="setInputValue(7)">7</button>
+            <button class="button-73" onclick="setInputValue(8)">8</button>
+            <button class="button-73" onclick="setInputValue(9)">9</button>
+          </div>
+          <div class="fourthnumbers ">
+            <button class="button-73" onclick="setInputValue(0)">0</button>
+          </div>
+        </div>
+        <div class="OK">
+            <button class="button-92" id="ok" onclick="okCheck()"><p>OK</p></button>
+        </div>
+        <div class="hack">
+            <button class="button-92-hack" onclick="passwordCrack()"><p>Password cracking</p></button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

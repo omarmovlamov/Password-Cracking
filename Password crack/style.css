@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(74, 76, 73);
+  background: linear-gradient(
+    153deg,
+    rgba(74, 76, 73, 1) 0%,
+    rgba(255, 243, 70, 1) 100%
+  );
+  filter: blur(0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+  position: relative;
+}
+.card {
+  box-shadow: 1px 2px 30px black;
+  width: 28vw;
+  height: 84vh;
+  background-image: url(img/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.6s transform;
+}
+.card:hover {
+  transition: 0.6s;
+  transform: scale(1.05);
+}
+.nav img {
+  width: 20%;
+  filter: invert(1);
+  padding-top: 6px;
+  transform: translateX(20deg) skew(10deg);
+}
+.nav img:hover {
+  transform: translateX(20deg) skew(10deg);
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+}
+.numbers .firstnumbers {
+  display: flex;
+  flex-direction: row;
+}
+.numbers .secondnumbers {
+  display: flex;
+  flex-direction: row;
+}
+.numbers .thirdnumbers {
+  display: flex;
+  flex-direction: row;
+}
+.numbers .fourthnumbers {
+  display: flex;
+  flex-direction: row;
+}
+.numbersstyle button {
+  font-size: 2.6em;
+  color: white;
+  font-family: "Courier New", monospace;
+  border-radius: 5px;
+  background-color: #f524a5;
+  font-weight: 700;
+}
+.numbers button {
+  margin-right: 10%;
+  margin-left: 6%;
+  margin-top: 50px;
+}
+.numbers .fourthnumbers button {
+  margin-left: 41%;
+}
+
+/* OK */
+
+.OK {
+  position: absolute;
+  box-shadow: 1px 2px 30px black;
+  left: 29vw;
+  top: 0;
+}
+.OK button {
+  height: 84vh;
+  width: 34px;
+}
+.OK button p {
+  transform: rotate(-90deg);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+/* Hack */
+.hack {
+  position: absolute;
+  box-shadow: 1px 2px 30px black;
+  left: -3.7vw;
+  top: 0;
+}
+.hack button {
+  height: 84vh;
+  width: 34px;
+}
+.hack button p {
+  transform: rotate(-90deg);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  margin-top: 10em;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+.succes {
+  position: absolute;
+  left: 40vw;
+  top: 80vh;
+  white-space: nowrap;
+}
+
+input {
+  padding: 6px 12px;
+  background: rgba(67, 80, 119, 0);
+  border: 1px solid rgb(78, 106, 151);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  height: 46px;
+  letter-spacing: 105px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  :focus {
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(255, 100, 100);
+  }
+}
+
+/* CSS Numbers Style*/
+.button-73 {
+  font-family: "Courier New", monospace;
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #ffc229;
+  box-shadow: #ff6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+/* CSS OK Style*/
+.button-92 {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #055f02;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9Q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0.1em 0.3em;
+}
+
+/* CSS Hack Style*/
+.button-92-hack {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #7c0101;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  transition: 0.3s;
+}
+
+.button-92-hack:hover,
+.button-92-hack:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92-hack:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9Q #0005;
+  transition: 0s;
+}
+
+.button-92-hack {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0.1em 0.3em;
+}
